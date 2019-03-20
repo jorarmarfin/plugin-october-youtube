@@ -3,4 +3,4 @@ plugin:
     description: 'luismayta.youtube::lang.plugin.description'
     author: 'Luis Mayta'
     icon: oc-icon-youtube-play
-    homepage: ''
+    homepage: 'https://github.com/jorarmarfin/plugin-october-youtube'

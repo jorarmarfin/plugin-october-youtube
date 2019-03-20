@@ -1,0 +1,9 @@
+fields:
+    api_key:
+        span: left
+        label: Api Key 
+        commentAbove: Api key de youtube
+    channel_id:
+        span: left
+        label: Channel id 
+        commentAbove: Your Channel ID
