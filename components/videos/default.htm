@@ -1,2 +1,16 @@
 <h1>Videos</h1>
-<p>{{videos}}</p>
+<ul>
+{% for video in videos %}
+    <li class="post ">
+        <a href="https://www.youtube.com/watch?v={{ video.id.videoId }}">
+            <div class="photo"><img width="80" height="80" src="{{ video.snippet.thumbnails.medium.url }}" class="scale-with-grid wp-post-image" alt="beauty_portfolio_2"><span class="c">4</span>
+            </div>
+            <div class="desc">
+                <h6>{{ video.snippet.title }}</h6><span class="date"><i class="icon-clock"></i>
+                    {{ video.snippet.publishedAt1|date("m/d/Y") }}
+                </span>
+            </div>
+        </a>
+    </li>  
+{% endfor %}
+</ul>

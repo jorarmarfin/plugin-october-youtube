@@ -16,17 +16,16 @@ class Videos extends ComponentBase
     public function defineProperties()
     {
         return [
-            'max' => [
+            'cnt' => [
                 'description'       => 'The most amount of todo items allowed',
                 'title'             => 'Max items',
-                'default'           => 10,
+                'default'           => 4,
             ]
         ];
     }
     public function onRun()
     {
-        $this->page['videos'] = YoutubeClient::instance()->getVideosPortada(2);
-
+        $this->page['videos'] = YoutubeClient::instance()->getVideosPortada($this->property('cnt'));
     }
     
 }
