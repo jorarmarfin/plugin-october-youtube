@@ -1,0 +1,6 @@
+plugin:
+    name: 'luismayta.youtube::lang.plugin.name'
+    description: 'luismayta.youtube::lang.plugin.description'
+    author: 'Luis Mayta'
+    icon: oc-icon-youtube-play
+    homepage: ''
