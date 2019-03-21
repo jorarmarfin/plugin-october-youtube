@@ -25,9 +25,9 @@ class Plugin extends PluginBase
     {
         return [
             'config' => [
-                'label'       => 'Youtube',
+                'label'       => 'luismayta.youtube::lang.plugin.name',
+                'description' => 'luismayta.youtube::lang.plugin.description',
                 'icon'        => 'icon-youtube-play',
-                'description' => 'Configuracion de api key y id de canal',
                 'class'       => 'LuisMayta\Youtube\Models\Settings',
                 'order'       => 600
             ]
