@@ -22,7 +22,7 @@ class YoutubeClient
 	}
 	public function getVideosPortada($cnt)
 	{
-		$url = "https://www.googleapis.com/youtube/v3/search?key=$this->key&channelId=$this->channel&part=snippet,id&order=date&maxResults=$cnt";
+		$url = "https://www.googleapis.com/youtube/v3/search?key=$this->key&channelId=$this->channel&part=snippet,id&order=date&maxResults=$cnt&type=video";
 		$json = file_get_contents($url);
 		$this->obj = json_decode($json, true);
         return $this->obj['items'];
